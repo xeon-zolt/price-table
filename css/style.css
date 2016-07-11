@@ -1,0 +1,195 @@
+
+.comparison {
+  max-width: 960px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  font: 13px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  padding: 10px;
+}
+
+.comparison table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+/*  table-layout: auto; */
+}
+
+.comparison td,
+.comparison th {
+  border-right: 1px solid #E8E8E8;
+  empty-cells: show;
+  padding: 10px;
+  border-top: 1px solid #E8E8E8;
+  border-bottom: 1px solid #E8E8E8;
+  color: #808080;
+  font-size: 15px;
+}
+
+.comparison tbody tr:nth-child(odd) {
+  display: none;
+}
+
+.comparison .compare-row {
+  background: #F7F7F7;
+}
+
+.fa-check {
+  color: #f96e5b;
+}
+
+.comparison th {
+  font-weight: normal;
+  padding: 0;
+  border-top: 0px solid #E8E8E8;
+  border-bottom: 0px solid #E8E8E8;
+}
+
+.comparison tr td:first-child {
+  text-align: left;
+  padding: 15px;
+  border-left: 1px solid #E8E8E8;
+  border-top: 1px solid #E8E8E8;
+}
+
+.comparison .product,
+.comparison .tl {
+  color: #FFF;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.comparison .tl2 {
+  border-right: 0;
+}
+
+.comparison .product {
+  background: #f96e5b;
+  height: 40px;
+  font-size: 1.6em;
+}
+
+.comparison .price-info {
+	padding-top: 15px;
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-bottom: 15px;
+	text-align: left;
+	top: 0px;
+}
+
+.comparison .price-now,
+.comparison .price-now span {
+	color: #808080;
+	top: 1px;
+}
+
+.comparison .price-now span {
+  font-size: 36px;
+  color: #545454;
+}
+
+.comparison .price-now p {
+  font-size: 14px;
+  text-align: center;
+  line-height: 16px;
+  display: inline;
+}
+
+.comparison .learn {
+  background: #f96e5b;
+  padding: 10px 20px;
+  font-size: 14px;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+  text-transform: uppercase;
+  margin: 5px 0 10px 0;
+  letter-spacing: 1px;
+  cursor: pointer;
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease;
+}
+
+.comparison .learn:hover {
+  background: #F7432B;
+}
+
+.comparison .buy {
+  background: #68F970;
+  padding: 10px 20px;
+  font-size: 14px;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+  text-transform: uppercase;
+  margin: 5px 0 10px 0;
+  letter-spacing: 1px;
+  cursor: pointer;
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease;
+}
+
+.comparison .buy:hover {
+  background: #05BF0F;
+}
+
+@media screen and (min-width: 721px) and (max-width: 1000px) {
+
+  .comparison .price-now span {
+    font-size: 32px;
+  }
+
+  .comparison .price-now p {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 720px) {
+
+  .comparison {
+    max-width: 100%;
+  }
+  .comparison td:first-child,
+  .comparison th:first-child {
+    display: none;
+  }
+  .comparison tbody tr:nth-child(odd) {
+    display: table-row;
+    background: #F7F7F7;
+  }
+
+  .comparison td,
+  .comparison th {
+    border: 1px solid #CCC;
+    border-top: none;
+    padding: 10px;
+  }
+  .price-info {
+    border-top: 0 !important;
+    padding: 10px 0 !important;
+  }
+  .price-info p {
+    line-height: 8px;
+    font-size: 8px !important;
+  }
+  .comparison .compare-row {
+    background: #ffffff;
+  }
+  .comparison .price-now p {
+    display: block;
+  }
+  .comparison .price-now span {
+    font-size: 24px;
+  }
+
+  .comparison td {
+    font-size: 14px;
+  }
+  .comparison th {
+    font-size: 14px;
+  }
+}
