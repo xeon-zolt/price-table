@@ -3,26 +3,33 @@
   <head>
     <meta charset="UTF-8">
     <title>Price Table</title>
-
+        
 
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/font-awesome.css">
 
   </head>
-
   <body>
+  
+   
+      
     <div class="comparison">
   <table width="101%">
-    <thead>
-
-      <tr id="sticky_menu" class="comparison" >
-        <th width="24%" class="tl tl2"></th>
+    <col width="340">
+    <col width="240">
+    <col width="240">
+    <col width="240">
+    
+      <thead>
+        
+      <tr id="stick" class="row">
+        <th width="24%" ></th>
         <th width="19%" class="product" style="background:#f96e5b; border-top-left-radius: 5px; border-left:0px;">Exchange Online Plan 1</th>
         <th width="19%" class="product" style="background:#f96e5b;">Office 365 Business Essential </th>
         <th width="19%" class="product" style="background:#f96e5b;">Office 365 &nbsp; &nbsp; Business &nbsp; </th>
         <th width="19%" class="product" style="border-top-right-radius: 5px; border-right:0px; background:#f96e5b;">Office 365 Business Premium</th>
       </tr>
-      <tr >
+      <tr class="row" >
         <th></th>
         <th style=" background: #F7F7F7;" class="price-info">
           <div class="price-now"><span>₹ 100</span>
@@ -234,7 +241,20 @@
       </tr>
     </tbody>
   </table>
+
 </div>
-        <script src="js/index.js"></script>
+
+        <script>
+            window.onscroll = function() {myFunction()};
+            function myFunction() {
+            if (document.body.scrollTop > 40) {
+                document.getElementById("stick").className ="fixed";
+            }
+            else{
+                 document.getElementById("stick").className ="row";
+            }
+            }
+        </script>
+
   </body>
 </html>
